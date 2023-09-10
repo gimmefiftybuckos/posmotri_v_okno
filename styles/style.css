@@ -36,3 +36,253 @@ ul,
 ol {
   list-style: none;
 }
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+} 
+
+.page {
+  display: flex;
+  align-items: center;
+}
+
+.content  {
+  margin: 0 auto;
+  max-height: 534px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.title {
+  font-family: Oswald;
+  font-size: 75px;
+  line-height: 70.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.result__video-container {
+  position: relative;
+  margin-top: 77px;
+  /* max-width: 711px; */
+}
+
+.result__video {
+  width: 711px;
+  height: 386px;
+}
+
+.search-form {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* gap: 40px; */
+}
+
+.search-form__label {
+  display: flex;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.search-form__label:hover .search-form__label-text{
+  border-bottom: 1px solid #fff;
+}
+
+/* АААААААААААААААААААААААААААААААААААААААААААААААА!!!!!!!!! */
+/* .search-form__label:has(:focus) {
+  outline: 1px solid #fff;
+  outline-offset: 5px;
+} */
+
+.search-form__fieldset {
+  border: none;
+}
+
+.search-form__fieldset-title {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.search-form__textfield {
+  padding: 1.5px 10px 1.5px 1px;
+  margin-top: 4px;
+  min-width: 225px;
+  appearance: none;
+  background-color: inherit;
+  color: rgba(255, 255, 255, 0.70);
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  border-top: 1px solid  rgba(255, 255, 255, 0.70);
+  border-bottom: 1px solid  rgba(255, 255, 255, 0.70); 
+}
+
+.search-form__textfield:focus {
+  outline: none;
+  border: 1px solid #fff;
+}
+
+/* АААААААААААААААААААААААААААААААААААААААААААААААА!!!!!!!!! */
+/* .search-form__textfield:has(:focus-visible) {
+  outline: 1px solid #fff;
+  outline-offset: 5px;
+} */
+
+.search-form__checkbox-list {
+  margin-top: 2px;
+  display: flex;
+  gap: 15px;
+}
+
+.search-form__label-text {
+  margin-top: 3px;
+  display: inline-block;
+}
+
+.button {
+  width: 100%;
+  min-height: 34px;
+  border: 1px solid #fff;
+  background-color: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.button:active {
+  background-color: #545050;
+}
+
+.button:focus-visible {
+  /* outline: 1px solid #fff; */
+  outline-offset: 3px;
+}
+
+.search-form__submit-button {
+  margin-top: 19px;
+  max-width: 194px;
+}
+
+.search-form__pseudo-checkbox {
+  margin-top: 3px;
+  width: 19px;
+  height: 19px;
+  padding: 2px;
+  display: inline-block;
+  border: 1px solid #fff;
+}
+
+input[type='checkbox']:checked + span {
+  background-color: #fff;
+  /* background-repeat: no-repeat; */
+  background-clip: content-box;
+}
+
+/* input[type='checkbox']:focus-visible + span {
+} */
+
+.content__details {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  min-width: 412px;
+  height: 100%;
+  width: 100%;
+}
+
+.content__list {
+  position: relative;
+  min-width: 413px;
+  /* display: flex;
+  flex-direction: column;
+  gap: 30px; */
+  /* max-height: 100%; */
+  /* overflow-y: scroll; */
+  overflow-y: scroll;
+}
+
+.content__list-item {
+  max-height: 107px;
+  max-width: 395px;
+  /* background-color: #fff; */
+}
+
+.content__list-item {
+  margin-bottom: 30px;
+}
+
+.content__video-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.content__video-card-thumbnail {
+  height: 108px;
+  width: 194px;
+}
+
+.content__video-card-description-container {
+  /* display: flex;
+  flex-direction: column;
+  gap: 2px; */
+  width: 100%;
+  padding: 0px 0 0 4px;
+}
+
+.content__video-card-title {
+  display: inline-block;
+  font-family: Oswald;
+  font-size: 30px;
+  /* line-height: 30px; */
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+}
+
+.content__video-card-description {
+  /* display: inline-block; */
+  /* margin-top: 4px; */
+  font-size: 18px;
+  line-height: 12px;
+  font-weight: 400;
+  color: white;
+}
+
+.content__card-link {
+  display: block;
+  text-decoration: none;           
+}
+
+.content__card-link:hover h2 {
+  border-bottom: 1px solid #fff;
+}
+
+.content__card-link:hover p {
+  text-decoration: underline;
+}
+
+
+.content__card-link:active {
+  background-color: #545050;
+}
+
+.content__accent {
+  color: #545050;
+}
+
