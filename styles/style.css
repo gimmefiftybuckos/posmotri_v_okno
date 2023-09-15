@@ -57,15 +57,14 @@ ol {
   max-height: 100%;
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  gap: 15px;
 }
 
 .content__details {
   display: flex;
   flex-direction: column;
   gap: 21px;
-  max-height: 534px;
-  min-width: 412px;
+  min-width: 414px;
   height: 100%;
   width: 100%;
 }
@@ -73,16 +72,22 @@ ol {
 .content__list {
   position: relative;
   min-width: 413px;
-  overflow-y: auto;
+  max-height: 300px;
+  overflow: hidden auto;
 }
 
 .content__list-item {
   max-height: 107px;
   max-width: 395px;
+  padding-left: 15px;
 }
 
-.content__list-item {
+.content__list-item:not(:last-of-type) {
   margin-bottom: 30px;
+}
+
+.content__list-item:last-of-type {
+  margin-bottom: 3px;
 }
 
 .content__video-card {
@@ -93,12 +98,14 @@ ol {
 
 .content__video-card-thumbnail {
   width: 192px;
+  height: 108px;
   object-fit: cover;
 }
 
 .content__video-card-description-container {
   width: 100%;
-  padding-left: 4px;
+  padding-left: 2px;
+  min-width: 204px;
 }
 
 .content__video-card-title {
@@ -147,16 +154,17 @@ ol {
 }
 
 .title {
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-size: 75px;
   line-height: 70.5px;
   font-weight: 700;
+  padding-left: 15px;
   text-transform: uppercase;
 }
 
 .result__video-container {
   position: relative;
-  margin-top: 77px;
+  margin-top: 75px;
   width: 711px;
   height: 386px;
 }
@@ -197,11 +205,11 @@ ol {
 .search-form__fieldset-title {
   font-size: 18px;
   font-weight: 400;
+  margin-bottom: 4px;
 }
 
 .search-form__textfield {
   padding: 1.5px 10px 1.5px 1px;
-  margin-top: 4px;
   min-width: 225px;
   appearance: none;
   background-color: inherit;
@@ -209,13 +217,16 @@ ol {
   font-family: inherit;
   font-size: inherit;
   border: none;
-  border-top: 1px solid  #fff;
-  border-bottom: 1px solid  #fff; 
+  border-top: 1px solid  currentColor;
+  border-bottom: 1px solid  currentColor;
 }
 
 .search-form__textfield:focus {
   outline: none;
-  outline: 1px solid #fff;
+}
+
+.search-form__textfield:active {
+  border: 1px solid currentColor;
 }
 
 .search-form__checkbox-list {
@@ -227,6 +238,11 @@ ol {
 .search-form__label-text {
   margin-top: 3px;
   display: inline-block;
+}
+
+.more-button {
+  margin-bottom: 3px;
+  margin-left: 3px;
 }
 
 .button {
@@ -275,7 +291,3 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox {
   background-color: #fff;
   background-clip: content-box;
 }
-
-
-
-
